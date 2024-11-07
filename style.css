@@ -1,0 +1,74 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: grid;
+    height: 100vh;
+    width: 100vw;
+    line-height: 1.5;
+    font-family: 'Roboto', sans-serif;
+    grid-template-columns: 1fr 4fr;
+    grid-template-rows: 1fr 3fr;
+    grid-template-areas:
+    "side nav nav nav nav" 
+    "side main main main main"
+    "side main main main main"
+    "side main main main main"
+    "side main main main main"
+}
+
+aside {
+    color: white;
+    font-weight: bold;
+    background-color: #1992d4;
+    grid-area: side;
+    border: 1px solid blue;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    gap: 2rem;
+    padding: 1rem 0 0 1rem;
+}
+
+.dashboard-title{
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 0.75rem;
+}
+
+.dashboard-title svg {
+    width: 2.5rem;
+    fill: currentColor;
+    font-family: sans-serif;
+}
+
+.first-links div,
+.second-links div{
+    display: flex;
+    align-items: center;
+    gap: 1.75rem;
+    font-size: 1.2rem;
+}
+
+.first-links svg,
+.second-links svg {
+    width: 1rem;
+    fill: currentColor;
+    font-family: sans-serif;
+}
+
+nav {
+    grid-area: nav;
+    display: flex;
+    border: 1px solid green;
+}
+
+main {
+    grid-area: main;
+    border: 1px solid red;
+}
