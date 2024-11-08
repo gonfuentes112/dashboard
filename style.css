@@ -152,5 +152,63 @@ button {
 
 main {
     grid-area: main;
-    border: 1px solid red;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    background-color: #eee;
+    border-top: inset 1px solid gray;
+    padding: 1rem;
+    gap: 1rem;
+}
+
+.main-title{
+    font-weight: bold;
+    font-size: 0.75rem;
+}
+
+.your-projects,
+.announcements,
+.trending {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.your-projects {
+    grid-row: span 2;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+
+    font-size: 0.5rem;
+}
+
+.card {
+    background-color: white;
+    border-left: 5px solid orange;
+    padding: 0.5rem;
+    box-shadow: 1px 1px 1px #ccc;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-title {
+    font-weight: bold;
+}
+
+.card-buttons {
+    align-self: flex-end;
+}
+
+.card-buttons svg {
+    height: 1rem;
 }
