@@ -69,9 +69,11 @@ nav {
     justify-content: space-between;
     padding: 0.5rem 1rem;
     border: 1px solid green;
+    gap: 1rem;
 }
 
-.nav-top {
+.nav-top, 
+.nav-bottom {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -106,7 +108,8 @@ nav {
     height: 1rem;
 }
 
-.top-right-icon {
+.top-right-icon,
+.user-info svg {
     background-color: yellow;
     border-radius: 50%;
     display: flex;
@@ -114,6 +117,22 @@ nav {
     justify-content: center;
     height: 1.5rem;
     width: 1.5rem;
+}
+
+.user-info {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    font-weight: bold;
+}
+
+.user-info svg {
+    height: 3rem;
+    width: 3rem;
+}
+
+.hello {
+    font-size: 0.5rem;
 }
 
 main {
