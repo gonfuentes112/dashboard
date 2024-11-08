@@ -65,7 +65,55 @@ aside {
 nav {
     grid-area: nav;
     display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 0.5rem 1rem;
     border: 1px solid green;
+}
+
+.nav-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.search {
+    display: flex;
+    flex: 1;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.search input {
+    width: 100%;
+    border: 1px solid #e6ebf1;
+    border-radius: 15px;
+    background-color: #e6ebf1;
+    box-shadow: none;
+}
+
+.top-right {
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    align-items: center;
+}
+
+.search svg,
+.top-right svg{
+    height: 1rem;
+}
+
+.top-right-icon {
+    background-color: yellow;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 1.5rem;
+    width: 1.5rem;
 }
 
 main {
