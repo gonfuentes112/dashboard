@@ -205,6 +205,10 @@ main {
     font-weight: bold;
 }
 
+.card-description {
+    color: #555;
+}
+
 .card-buttons {
     align-self: flex-end;
 }
