@@ -161,10 +161,9 @@ main {
     grid-template-columns: 3fr 1fr;
     grid-template-rows: 1fr 1fr;
     background-color: #eee;
-    border-top: inset 1px solid gray;
+    border-top: 2px inset #eee;
     padding: 1rem;
     gap: 1rem;
-    font-size: 0.5rem;
 }
 
 .main-title{
@@ -191,11 +190,11 @@ main {
     justify-content: center;
     align-items: center;
     gap: 1rem;
-
-
 }
 
-.card, .announcement-card {
+.card, 
+.announcement-card,
+.trending-card {
     background-color: white;
     padding: 0.5rem;
     box-shadow: 1px 1px 1px #ccc;
@@ -206,14 +205,28 @@ main {
     align-items: center;
 }
 
+.trending-card {
+    gap: 0.5rem;
+}
+
 .card {
     border-left: 5px solid orange;
+}
+
+.announcement-card {
+    height: 100%;
+    align-items: start;
+    flex: 1;
 }
 
 
 .announcement-card .announcement{
     border-bottom: 1px solid #ccc;
+    width: 100%;
     padding: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
 }
 
 .announcement-card .announcement:last-child {
@@ -235,4 +248,12 @@ main {
 
 .card-buttons svg {
     height: 1rem;
+}
+
+.trending-box {
+    display: flex;
+    width: 100%;
+    gap: 0.5rem;
+    padding-left: 1rem;
+    align-items: center;
 }
