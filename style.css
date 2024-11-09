@@ -69,7 +69,6 @@ nav {
     grid-area: nav;
     display: flex;
     flex-direction: column;
-    justify-content: center;
     gap: 1rem;
     padding: 0.5rem 1rem;
 }
@@ -80,6 +79,7 @@ nav {
     justify-content: space-between;
     align-items: center;
     gap: 0.5rem;
+    height: 50%;
 }
 
 .search {
@@ -98,9 +98,9 @@ nav {
 }
 
 .top-right {
-    width: 30%;
+    width: 40%;
     display: flex;
-    justify-content: center;
+    justify-content: end;
     gap: 1rem;
     align-items: center;
 }
@@ -140,7 +140,7 @@ nav {
 .options {
     min-width: 40%;
     display: flex;
-    justify-content: center;
+    justify-content: end;
     gap: 1rem;
 
 }
